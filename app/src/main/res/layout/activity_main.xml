@@ -3,32 +3,38 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="411dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="132dp"
+        android:background="#FFFFFF"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="61dp">
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:id="@+id/tvRes"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="100dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:baselineAligned="false"
+            android:maxHeight="60sp"
             android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textIsSelectable="false"
             android:textSize="60sp" />
 
         <TableLayout
             android:id="@+id/tableLayout"
             android:layout_width="match_parent"
-            android:layout_height="475dp">
+            android:layout_height="457dp">
 
             <TableRow
                 android:layout_width="match_parent"
@@ -38,27 +44,42 @@
                     android:id="@+id/button"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:layout_weight="1"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#2A2A2A"
+                    android:ellipsize="none"
                     android:onClick="calcular"
                     android:text="7"
+                    android:textColor="#F8F8F8"
                     android:textSize="36sp" />
 
                 <Button
                     android:id="@+id/button2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:layout_weight="1"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#2A2A2A"
+                    android:ellipsize="none"
                     android:onClick="calcular"
                     android:text="8"
+                    android:textColor="#F8F8F8"
                     android:textSize="36sp" />
 
                 <Button
                     android:id="@+id/button3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:layout_weight="1"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#2A2A2A"
+                    android:ellipsize="none"
                     android:onClick="calcular"
                     android:text="9"
+                    android:textColor="#F8F8F8"
                     android:textSize="36sp" />
             </TableRow>
 
@@ -70,27 +91,41 @@
                     android:id="@+id/button"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:layout_weight="1"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#2A2A2A"
                     android:onClick="calcular"
                     android:text="4"
+                    android:textColor="#F8F8F8"
                     android:textSize="36sp" />
 
                 <Button
                     android:id="@+id/button2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:layout_weight="1"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#2A2A2A"
+                    android:ellipsize="none"
                     android:onClick="calcular"
                     android:text="5"
+                    android:textColor="#F8F8F8"
                     android:textSize="36sp" />
 
                 <Button
                     android:id="@+id/button3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:layout_weight="1"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#2A2A2A"
+                    android:ellipsize="none"
                     android:onClick="calcular"
                     android:text="6"
+                    android:textColor="#F8F8F8"
                     android:textSize="36sp" />
             </TableRow>
 
@@ -102,27 +137,42 @@
                     android:id="@+id/button"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:layout_weight="1"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#2A2A2A"
+                    android:ellipsize="none"
                     android:onClick="calcular"
                     android:text="1"
+                    android:textColor="#F8F8F8"
                     android:textSize="36sp" />
 
                 <Button
                     android:id="@+id/button2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:layout_weight="1"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#2A2A2A"
+                    android:ellipsize="none"
                     android:onClick="calcular"
                     android:text="2"
+                    android:textColor="#F8F8F8"
                     android:textSize="36sp" />
 
                 <Button
                     android:id="@+id/button3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:layout_weight="1"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#2A2A2A"
+                    android:ellipsize="none"
                     android:onClick="calcular"
                     android:text="3"
+                    android:textColor="#F8F8F8"
                     android:textSize="36sp" />
             </TableRow>
 
@@ -134,28 +184,45 @@
                     android:id="@+id/button"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:layout_weight="1"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#FF9800"
+                    android:ellipsize="none"
                     android:onClick="calcular"
                     android:text="+"
-                    android:textSize="36sp" />
+                    android:textColor="#FFFFFF"
+                    android:textSize="36sp"
+                    app:iconTint="#EFECEC" />
 
                 <Button
                     android:id="@+id/button2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:layout_weight="1"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#2A2A2A"
+                    android:ellipsize="none"
                     android:onClick="calcular"
                     android:text="0"
+                    android:textColor="#F8F8F8"
                     android:textSize="36sp" />
 
                 <Button
                     android:id="@+id/button3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:layout_weight="1"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#FF9800"
+                    android:ellipsize="none"
                     android:onClick="calcular"
                     android:text="-"
-                    android:textSize="36sp" />
+                    android:textColor="#FFFFFF"
+                    android:textSize="36sp"
+                    app:iconTint="#EFECEC" />
             </TableRow>
 
             <TableRow
@@ -166,28 +233,46 @@
                     android:id="@+id/button"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:layout_weight="1"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#FF9800"
+                    android:ellipsize="none"
                     android:onClick="calcular"
                     android:text="*"
-                    android:textSize="36sp" />
+                    android:textColor="#FFFFFF"
+                    android:textSize="36sp"
+                    app:iconTint="#EFECEC" />
 
                 <Button
                     android:id="@+id/button2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:layout_weight="1"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#FF9800"
+                    android:ellipsize="none"
                     android:onClick="calcular"
                     android:text="/"
-                    android:textSize="36sp" />
+                    android:textColor="#FFFFFF"
+                    android:textSize="36sp"
+                    app:iconTint="#EFECEC" />
 
                 <Button
                     android:id="@+id/button3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:layout_weight="1"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#FF9800"
+                    android:ellipsize="none"
                     android:onClick="calcular"
-                    android:text="="
-                    android:textSize="36sp" />
+                    android:text="AC"
+                    android:textColor="#FFFFFF"
+                    android:textSize="36sp"
+                    app:iconTint="#EFECEC" />
             </TableRow>
 
             <TableRow
@@ -198,9 +283,14 @@
                     android:id="@+id/button"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:layout_weight="1"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#474747"
+                    android:ellipsize="none"
                     android:onClick="calcular"
-                    android:text="Reset"
+                    android:text="="
+                    android:textColor="#FFFFFF"
                     android:textSize="36sp" />
 
             </TableRow>
